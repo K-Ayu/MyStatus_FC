@@ -2,8 +2,40 @@
 <html>
   <head>
     <base target="_top">
+    <?!= HtmlService.createHtmlOutputFromFile('css').getContent(); ?>
   </head>
   <body>
-    <h1>We are FeelCyclist!!</h>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="https://www.feelcycle.com/">
+        <img src="https://drive.google.com/uc?id=1jDk8h0egYxfKbTTX0YNs-cTHd93Xi68O" width="30" height="30" alt="いつも隣にITのお仕事ロゴ">
+        FEELCYCLE
+      </a>
+    </nav>
+    <div class="jumbotron">
+      <h1>アーサーのFCデータ一覧</h1>
+      今まで漕いできたFCデータを可視化していきます。
+    </div>
+    
+    <div class="container">
+      <h2>漕いだプログラム一覧</h2>
+      全部洗い出してみると圧巻ですね。
+      <ol>
+        <li><a href="https://tonari-it.com/gas-script-editor/">【初心者向けGAS】本当の最初の一歩！スクリプトエディタでプロジェクトを開く</a></li>
+        <li><a href="https://tonari-it.com/gas-script-create-save-run/">【初心者向けGAS】はじめてのスクリプトを作成し、保存し、実行する</a></li>
+        <li><a href="https://tonari-it.com/gas-variable-data-type/">【初心者向けGAS】プログラミングに必須の変数の使い方とデータ型について</a></li>
+        <li><a href="https://tonari-it.com/gas-logger-log/">【初心者向けGAS】ログを表示するLogger.logの使い方</a></li>
+        <li><a href="https://tonari-it.com/gas-script-approval/">【初心者向けGAS】スクリプト実行時の「承認」でびっくりしないために</a></li>
+      </ol>
+      <p >（以下略）</p>
+        
+      <h2>漕いだインストラクターさん一覧</h2>
+      推しを含めたくさん漕いでますね。もう退職された懐かしい方もちらほら・・・
+      <ol>
+        <li><a href="https://tonari-it.com/gas-html-web-page/">Google Apps Scriptで最も簡単なWebページを作成して公開する</a></li>
+        <li><a href="https://tonari-it.com/gas-web-doget-html-output/">GASでWebページを表示するdoGet関数のスクリプトについて丁寧に解説</a></li>
+        <li><a href="https://tonari-it.com/gas-html-tag/">GASで作成した最も簡単なWebページのHTMLコードについて丁寧に解説</a></li>
+      </ol>
+    </div>
+    <?!= HtmlService.createHtmlOutputFromFile('js').getContent(); ?>
   </body>
 </html>
